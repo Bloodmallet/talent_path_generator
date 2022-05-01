@@ -1,0 +1,718 @@
+[
+    {
+        "name": "A1",
+        "index": 0,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [],
+        "children_names": [
+            "B1",
+            "B21",
+            "B3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "B1",
+        "index": 1,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "A1"
+        ],
+        "children_names": [
+            "C1"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "B21",
+        "index": 2,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "A1"
+        ],
+        "children_names": [
+            "B22"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "B22",
+        "index": 3,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "B21"
+        ],
+        "children_names": [
+            "C2"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "B3",
+        "index": 4,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "A1"
+        ],
+        "children_names": [
+            "C3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "C1",
+        "index": 5,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "B1"
+        ],
+        "children_names": [
+            "D11",
+            "E11"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "C2",
+        "index": 6,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "B22"
+        ],
+        "children_names": [],
+        "sibling_names": []
+    },
+    {
+        "name": "C3",
+        "index": 7,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "B3"
+        ],
+        "children_names": [
+            "D21",
+            "D31",
+            "E4"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D11",
+        "index": 8,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "C1"
+        ],
+        "children_names": [
+            "D12"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D12",
+        "index": 9,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "D11"
+        ],
+        "children_names": [
+            "E2",
+            "E3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D21",
+        "index": 10,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "C3"
+        ],
+        "children_names": [
+            "D22"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D22",
+        "index": 11,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "D21"
+        ],
+        "children_names": [
+            "E2",
+            "E3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D31",
+        "index": 12,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "C3"
+        ],
+        "children_names": [
+            "D32"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "D32",
+        "index": 13,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "D31"
+        ],
+        "children_names": [],
+        "sibling_names": []
+    },
+    {
+        "name": "E11",
+        "index": 14,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "C1"
+        ],
+        "children_names": [
+            "E12"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "E12",
+        "index": 15,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "E11"
+        ],
+        "children_names": [
+            "E13"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "E13",
+        "index": 16,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "E12"
+        ],
+        "children_names": [
+            "F1"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "E2",
+        "index": 17,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "D12",
+            "D22"
+        ],
+        "children_names": [
+            "F21",
+            "F31"
+        ],
+        "sibling_names": [
+            "E3"
+        ]
+    },
+    {
+        "name": "E3",
+        "index": 18,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "D12",
+            "D22"
+        ],
+        "children_names": [
+            "F21",
+            "F31"
+        ],
+        "sibling_names": [
+            "E2"
+        ]
+    },
+    {
+        "name": "E4",
+        "index": 19,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 6,
+        "parent_names": [
+            "C3"
+        ],
+        "children_names": [
+            "F4"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F1",
+        "index": 20,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "E13"
+        ],
+        "children_names": [
+            "G1",
+            "G2",
+            "H1",
+            "H2"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F21",
+        "index": 21,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "E2",
+            "E3"
+        ],
+        "children_names": [
+            "F22"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F22",
+        "index": 22,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F21"
+        ],
+        "children_names": [
+            "G1",
+            "G2"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F31",
+        "index": 23,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "E2",
+            "E3"
+        ],
+        "children_names": [
+            "F32"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F32",
+        "index": 24,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F31"
+        ],
+        "children_names": [
+            "G3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "F4",
+        "index": 25,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "E4"
+        ],
+        "children_names": [
+            "G3",
+            "G41"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "G1",
+        "index": 26,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F1",
+            "F22"
+        ],
+        "children_names": [
+            "H3"
+        ],
+        "sibling_names": [
+            "G2"
+        ]
+    },
+    {
+        "name": "G2",
+        "index": 27,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F1",
+            "F22"
+        ],
+        "children_names": [
+            "H3"
+        ],
+        "sibling_names": [
+            "G1"
+        ]
+    },
+    {
+        "name": "G3",
+        "index": 28,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F32",
+            "F4"
+        ],
+        "children_names": [
+            "H3"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "G41",
+        "index": 29,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "F4"
+        ],
+        "children_names": [
+            "G42"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "G42",
+        "index": 30,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "G41"
+        ],
+        "children_names": [
+            "H4"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "H1",
+        "index": 31,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 12,
+        "parent_names": [
+            "F1"
+        ],
+        "children_names": [
+            "I1",
+            "I2",
+            "I31"
+        ],
+        "sibling_names": [
+            "H2"
+        ]
+    },
+    {
+        "name": "H2",
+        "index": 32,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 12,
+        "parent_names": [
+            "F1"
+        ],
+        "children_names": [
+            "I1",
+            "I2",
+            "I31"
+        ],
+        "sibling_names": [
+            "H1"
+        ]
+    },
+    {
+        "name": "H3",
+        "index": 33,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 12,
+        "parent_names": [
+            "G1",
+            "G2",
+            "G3"
+        ],
+        "children_names": [
+            "I31",
+            "I41"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "H4",
+        "index": 34,
+        "talent_type": 2,
+        "max_rank": 1,
+        "required_invested_points": 12,
+        "parent_names": [
+            "G42"
+        ],
+        "children_names": [
+            "I41",
+            "I5"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I1",
+        "index": 35,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "H1",
+            "H2"
+        ],
+        "children_names": [
+            "J1",
+            "J2"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I2",
+        "index": 36,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "H1",
+            "H2"
+        ],
+        "children_names": [],
+        "sibling_names": []
+    },
+    {
+        "name": "I31",
+        "index": 37,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "H1",
+            "H2",
+            "H3"
+        ],
+        "children_names": [
+            "I32"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I32",
+        "index": 38,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I31"
+        ],
+        "children_names": [
+            "J3",
+            "J4"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I41",
+        "index": 39,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "H3",
+            "H4"
+        ],
+        "children_names": [
+            "I42"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I42",
+        "index": 40,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I41"
+        ],
+        "children_names": [
+            "J3",
+            "J4"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "I5",
+        "index": 41,
+        "talent_type": 1,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "H4"
+        ],
+        "children_names": [
+            "J5",
+            "J6"
+        ],
+        "sibling_names": []
+    },
+    {
+        "name": "J1",
+        "index": 42,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I1"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J2"
+        ]
+    },
+    {
+        "name": "J2",
+        "index": 43,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I1"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J1"
+        ]
+    },
+    {
+        "name": "J3",
+        "index": 44,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I32",
+            "I42"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J4"
+        ]
+    },
+    {
+        "name": "J4",
+        "index": 45,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I32",
+            "I42"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J3"
+        ]
+    },
+    {
+        "name": "J5",
+        "index": 46,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I5"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J6"
+        ]
+    },
+    {
+        "name": "J6",
+        "index": 47,
+        "talent_type": 3,
+        "max_rank": 1,
+        "required_invested_points": 0,
+        "parent_names": [
+            "I5"
+        ],
+        "children_names": [],
+        "sibling_names": [
+            "J5"
+        ]
+    }
+]
