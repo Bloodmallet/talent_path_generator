@@ -1,18 +1,16 @@
-// use std::collections::HashMap;
-
 #[derive(PartialEq)]
 pub struct Talent {
-    name: String,
-    talent_type: i8,
-    required_invested_points: i8,
-    parent_names: Vec<String>,
-    children_names: Vec<String>,
-    sibling_names: Vec<String>,
+    pub name: String,
+    pub talent_type: i8,
+    pub required_invested_points: i8,
+    pub parent_names: Vec<String>,
+    pub children_names: Vec<String>,
+    pub sibling_names: Vec<String>,
 
-    index: usize,
-    parents: Vec<usize>,
-    children: Vec<usize>,
-    siblings: Vec<usize>,
+    pub index: usize,
+    pub parents: Vec<usize>,
+    pub children: Vec<usize>,
+    pub siblings: Vec<usize>,
 }
 
 fn get_index(talents: &Vec<Talent>, name: &String) -> usize {
@@ -70,10 +68,12 @@ impl Talent {
         );
     }
 
+    pub fn is_selected(&self, tree: &Vec<bool>) -> bool {
+        return tree[self.index];
+    }
+
     pub fn initialize(talents: &mut Vec<Talent>) -> () {
         for index in 0..talents.len() {
-            println!("{} {}", index, talents[index].string());
-
             let children: Vec<usize> = get_indizes(talents, &talents[index].children_names);
             let parents: Vec<usize> = get_indizes(talents, &talents[index].parent_names);
             let siblings: Vec<usize> = get_indizes(talents, &talents[index].sibling_names);
@@ -83,5 +83,17 @@ impl Talent {
             talent.children =children;
             talent.siblings = siblings
         }
+    }
+
+    pub fn select(&self, tree: &Vec<bool>)-> Result<Vec<bool>, &str> {
+        if tree[self.index] {
+            return Err("Already selected.");
+        }
+
+        let mut new_tree = tree.clone();
+
+        new_tree[self.index] = true;
+
+        return Ok(new_tree);
     }
 }

@@ -32,7 +32,15 @@ pub fn load_talents(json_path: &str) -> Vec<Talent> {
     for talent in json_talents {
         // println!("{}", talent.name);
         talents.push(
-            Talent::create(talent.name, talent.index, talent.talent_type, talent.required_invested_points, talent.parent_names, talent.children_names, talent.sibling_names)
+            Talent::create(
+                talent.name, 
+                talent.index, 
+                talent.talent_type, 
+                0, // talent.required_invested_points, 
+                talent.parent_names, 
+                talent.children_names, 
+                talent.sibling_names,
+            )
         );
     }
 
