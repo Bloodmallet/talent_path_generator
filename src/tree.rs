@@ -70,6 +70,8 @@ impl Tree {
                 let path = &existing_paths[i_path].0;
                 let entry_points = &existing_paths[i_path].1;
 
+                // create a path for each entrypoint, if possible, 
+                // register new entry points based on the new additional talent.
                 for i_entry_point in 0..entry_points.len() {
                     let talent = &self.talents[entry_points[i_entry_point]];
                     let mut new_entry_points = entry_points.clone();
@@ -81,22 +83,10 @@ impl Tree {
                         // new_entry_points.retain(|&x| x != talent.index);
                     } else if talent.required_invested_points > i {
                         // nothing to do here
-                        // println!("This entry point needs to stay relevant until enough points are invested");
                     } else {
                         let new_path = talent.select(path).unwrap();
 
-                        // if self.string(&new_path) == String::from("A1B1C1D11D12") {
-                        //     println!("Found it");
-                        // }
-
                         if !new_paths.iter().any(|x| x.0 == new_path) {
-                            // if self.string(&new_path) == String::from("A1B1C1D11D12") {
-                            //     let mut entry_names = String::new();
-                            //     for asd_i in 0..new_entry_points.len() {
-                            //         entry_names += &self.talents[new_entry_points[asd_i]].name;
-                            //     }
-                            //     println!("Talent: {:?}, Entry Points: {:?}", talent.string(), entry_names);
-                            // }
 
                             for i_child in 0..talent.children.len() {
                                 let child_id = talent.children[i_child];
@@ -105,25 +95,9 @@ impl Tree {
                                 }
                             }
 
-                            // if self.string(&new_path) == String::from("A1B1C1D11D12") {
-                            //     let mut entry_names = String::new();
-                            //     for asd_i in 0..new_entry_points.len() {
-                            //         entry_names += &self.talents[new_entry_points[asd_i]].name;
-                            //     }
-                            //     println!("Talent: {:?}, Entry Points: {:?}", talent.string(), entry_names);
-                            // }
 
                             new_entry_points.retain(|&x| x != talent.index);
 
-                            // if self.string(&new_path) == String::from("A1B1C1D11D12") {
-                            //     let mut entry_names = String::new();
-                            //     for asd_i in 0..new_entry_points.len() {
-                            //         entry_names += &self.talents[new_entry_points[asd_i]].name;
-                            //     }
-                            //     println!("Talent: {:?}, Entry Points: {:?}", talent.string(), entry_names);
-                            // }
-
-                            // println!("Number of entry points: {}", new_entry_points.len());
                             new_paths.push((new_path, new_entry_points));
                         }
                     }
